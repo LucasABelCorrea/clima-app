@@ -32,7 +32,8 @@ fun ClimaNavHost(innerPadding: PaddingValues) {
                             lon = city.longitude
                         )
                     )
-                }
+                },
+                onNavigateToFavorites = { navController.navigate(Screen.Favorites.route) }
             )
         }
         composable(Screen.Favorites.route) { FavoritesScreen() }
